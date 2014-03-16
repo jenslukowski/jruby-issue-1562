@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To reproduce:
+bundle install
+rake db:reset
+-> Error
 
-Things you may want to cover:
+java version "1.7.0_09"
 
-* Ruby version
+Tested with JRuby 1.7.11 (h2) (crashes)
+and MRI Ruby 1.9.3 (sqlite) (works)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Tried: export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 to no avail
